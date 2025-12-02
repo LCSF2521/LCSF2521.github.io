@@ -1,46 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Forward Fitness Club</title>
+        <title>Contact - Big Red Spot Blenders</title>
         <meta charset="utf-8" />
+            <link rel="shortcut icon" href="images/BRS_W_B_48.ico">
+            <link rel="icon" type="image/png" sizes="32x32" href="images/BRS_W_B_32.png">
+            <link rel="apple-touch-icon" sizes="180x180" href="images/BRS_W_B_180.png">
+            <link rel="icon" sizes="192x192" href="images/BRS_W_B_192.png">
     </head>
     <body>
-        <div id="container">
+ <div id="container">
         <header>
-            <h1>Forward Fitness Club</h1>
 
-           <a href="fitness.html"> <img src="images/forward-fitness-logo.png" alt=" Forward Fitness Club logo"></a>
-           <link rel="stylesheet" href="css/styles.css">
+
+            <link rel="stylesheet" href="css/styles.css">
+            <meta name="viewport" content="width-device-width, initial-scale=1">
+            <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+            <a href="index.html"> <img  src="images/BRS_TEXT4.png" alt="Big Red Spot Blenders Logo, Black outline" class="mainicon"></a>
+
         </header>
 
         <nav>
             <ul>
-            <li><a href="fitness.html">Home</a></li> 
+            <li><a href="index.html">Home</a></li> 
             <li><a href="about_us.html"> About Us</a></li>
-            <li><a href="classes.html">Classes</a></li>
-            <li><a href="nutrition.html">Nutrtition</a></li> 
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="team.html">Team</a></li> 
             <li><a href="contact_us.html">Contact Us</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="media.html">Media</a></li>
             </ul>
             
         </nav>
         <!-- Hero Image-->
-         <div id="hero">
-        <img src="images/hero-image.jpg" alt="left arm extended holding a weight">
-         </div>
+         <figure class = "tablet-desktop-frame">
+        <img src="images/big_spot_regular_hero.png" alt="Jupiter's Big Red Spot">
+        <figcaption class="pic-text-large">
+    <span>Strong.</span>
+    <span>Steady.</span>
+    <span>Efficient.</span>
+        </figcaption>
+                </figure>
+
         <main>
                    <div id="contact">
                 <h2>Ready to get started? Contact us today.</h2>
-                <h4>Call us: (814) 555-9608</h4>
-                <h4>Email us: <a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></h4>
+                <h4 class="mobile tel-link"><a href="tel:8145559608">Call us: (814) 555-9608</a></h4>
+                <h4 class="tablet-desktop tel-num">(814) 555-9608</h4>
+                <h4>Email us: <a href="mailto:BRSBlenders@club.net" class="contact-email-link">BRSBlenders@club.net</a></h4>
                 <h4>Visit us at: 1275 Channel Center Street, Boston, MA 02210</h4>
-
+                <ul class = "ulbasic">
+                    <li>Time Open</li>
+                    <li>Mon-Thu: 9:00am-4:00pm</li>
+                    <li>Friday: 9:00am-3:00pm</li>
+                    <li>Saturday: 10:00am-2:00pm</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+                <br>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.8516356263076!2d-71.05401852352226!3d42.34568643600906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a7dc2b67e7b%3A0x36ec93427cd9c5f1!2sChannel%20Center%20St%2C%20Boston%2C%20MA%2002210%2C%20USA!5e0!3m2!1sen!2sca!4v1758235468783!5m2!1sen!2sca" 
                 width="600" height="450" allowfullscreen class ="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="form">
+                    <h1>Contact Us</h1>
+                    <p>Please fill out the form below and submit your request.</p>
+
+
+                    <div id="form">
+
+
+                    <fieldset>
+                    <legend>Your Information</legend>
+
+
+                    <label for="fullname">Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required autofocus size="30"><br><br>
+
+
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+
+                    <label for="date">Date of Inquiry:</label><br>
+                    <input type="date" id="date" name="date" required><br><br>
+
+
+                    </fieldset>
+
+
+                    <fieldset>
+                    <legend>Reason for Contact</legend>
+
+
+                    <label>Type of Request:</label><br>
+                    <input type="radio" id="support" name="requestType" value="Support" required>
+                    <label for="support">Support</label><br>
+
+
+                    <input type="radio" id="feedback" name="requestType" value="Feedback">
+                    <label for="feedback">Feedback</label><br>
+
+
+                    <input type="radio" id="business" name="requestType" value="Business">
+                    <label for="business">Business Inquiry</label><br><br>
+
+
+                    <label for="service">Select a Service:</label><br>
+                    <select id="service" name="service" required>
+                    <option value="">-- Choose One --</option>
+                    <option value="general">General Question</option>
+                    <option value="billing">Billing Issue</option>
+                    <option value="technical">Technical Problem</option>
+                    <option value="other">Other</option>
+                    </select><br><br>
+
+
+                    <label for="updates">Subscribe for Updates:</label>
+                    <input type="checkbox" id="updates" name="updates" value="yes"> Yes, send me updates<br><br>
+
+
+                    </fieldset>
+
+
+                    <fieldset>
+                    <legend>Message Details</legend>
+
+
+                    <label for="message">Your Message:</label><br>
+                    <textarea id="message" name="message" rows="6" cols="40" placeholder="Describe your request..." required></textarea><br><br>
+
+
+                    </fieldset>
+
+
+                    <button type="submit">Submit Request</button>
+                    <button type="reset">Reset Form</button>
+
+
+                    </form>
+                </div>
+
+
+</div>
             </div>
         </main>
         <footer>
-            <p>&copy; Copyright 2094. All rights Reserved</p>
-            <p><a href="mailto:forwardfitness@club.net">forwardfitness@club.net</a></p>
+            <p>&copy; Copyright 2094. All rights Reserved<br> Request information </p>
+            <p><a href="mailto:BRSBlenders@club.net">BRSBlenders@club.net</a></p>
+            <p>Rojr Lefebvre &nbsp; &nbsp; C0961917</p>
         </footer>
         </div>
     </body>
