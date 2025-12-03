@@ -1,7 +1,7 @@
 /*Primary Colors:
 #a11d1d - Red
 */
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, table, tr, td, th {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, table, tr, td, th, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -13,8 +13,14 @@ img{
     max-width: 100%;
     display: block;
 }
+img,video,iframe{
+    max-width: 100%;
+    display: block;
+}
 
-
+video,iframe{
+    margin: 0 auto;
+}
 
 
 /* Style rule for box sizing applies to all elements */
@@ -145,7 +151,9 @@ nav li a{
     display: block;
 
 }
-
+iframe {
+    padding: auto auto;
+}
 figure img{
     size: 500 500;
 }
