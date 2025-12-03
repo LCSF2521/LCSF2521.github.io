@@ -1,7 +1,7 @@
 /*Primary Colors:
 #a11d1d - Red
 */
-body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section {
+body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, table, tr, td, th {
     margin: 0;
     padding: 0;
     border: 0;
@@ -33,6 +33,74 @@ header img {
     margin: 0 auto;
     position: absolute;
 }
+
+.productofweek {
+    padding: 20px;
+    background: #f9f9f9;
+    margin: 30px auto;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.pow {
+    display: none;
+}
+.pow-mob {
+    display: block;
+}
+
+.pow-img {
+    width: 260px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.pow-desc {
+    max-width: 600px;
+}
+
+.price-tag {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.training-table {
+    width: 100%;
+    border: 2px solid #611313;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+.training-declutter {
+    display: none;
+}
+
+.training-table caption {
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 10px;
+    color: #b30000;
+}
+.training-table th  {
+    background-color: #b30000;
+    color: white;
+    padding: 12px;
+    border: 1px solid #222;
+}
+.training-table tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+.training-table tr:hover {
+    background-color: #ffe0e0;
+}
+
+.extra-info {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
 
 
 nav{
@@ -77,6 +145,10 @@ nav li a{
     display: block;
 
 }
+
+figure img{
+    size: 500 500;
+}
 main{
     clear: left;
     background-color: #fff;
@@ -102,6 +174,11 @@ article img {
 
 article ul {
     margin-left: 10%;
+}
+
+.contactclick{
+    text-decoration: none;
+    color: #9c0000;
 }
 
 article:nth-of-type(2) {
@@ -209,6 +286,8 @@ footer p a{
 }
 /* Media Query for Tablet Viewport */
 @media screen and (min-width:630px),print {
+
+    
     
 /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
 .tablet-desktop {
@@ -233,6 +312,25 @@ footer p a{
   height: auto;
   display: block;
 }
+
+.pow {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+.pow-img {
+    margin: 0 0;
+}
+.pow-mob {
+    display: none;
+}
+
+.training-declutter {
+
+    display: block;
+ 
+}
+
 
 .pic-text-large {
   position: absolute;
